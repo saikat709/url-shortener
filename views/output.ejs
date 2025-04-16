@@ -1,0 +1,35 @@
+<div class="container my-5">
+    <div class="card shadow p-4">
+      <h2 class="mb-3 text-success text-center">✅ URL Shortened Successfully!</h2>
+  
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Original URL:</label>
+        <p class="form-control-plaintext text-break"><%= originalUrl %></p>
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Shortened URL:</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="shortUrl" value="<%= shortUrl %>" readonly>
+          <button class="btn btn-outline-primary" onclick="copyToClipboard()">Copy</button>
+        </div>
+      </div>
+  
+      <div class="text-center mt-4">
+        <a href="/" class="btn btn-secondary">Shorten Another</a>
+      </div>
+    </div>
+</div>
+  
+<script>
+    function copyToClipboard() {
+      const input = document.getElementById("shortUrl");
+      input.select();
+      input.setSelectionRange(0, 99999); // For mobile
+      document.execCommand("copy");
+  
+      // Optionally give feedback
+      alert("Short URL copied to clipboard!");
+    }
+</script>
+  

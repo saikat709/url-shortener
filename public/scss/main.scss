@@ -1,0 +1,16 @@
+$primary: #6f42c1;
+$font-family-base: 'Segoe UI', sans-serif;
+
+@import "bootstrap/scss/bootstrap";
+
+
+body {
+    background-color: rgba(245, 239, 221, 0.911);
+}
+
+a {
+    background-color: #6f42c1;
+    color: aqua;
+    text-decoration: underline;
+    background-color: transparent;
+}
