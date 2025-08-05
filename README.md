@@ -2,8 +2,8 @@
 
 ## Technologies
 - ExpressJS
-- Ejs template Renderer
-- Mongodb Database
+- EJS templating engine
+- MongoDB Database
 - Bootstrap Frontend styling
 - Sass : to customize bootstrap
 
